@@ -4,6 +4,7 @@
 	<title>Java Web Starter Application</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<link rel="stylesheet" href="style.css" />
+	<link rel="manifest" href="manifest.json">
 </head>
 <body>
 	<table>
@@ -19,7 +20,23 @@
 			</td>
 		</tr>
 	</table>
-	<!-- Call SimpleServlet to get the "Hello World" message  -->
-	<script type="text/javascript" src="index.js"></script>
+	<script src="BMSPushSDK.js" BMSPush></script>
+	<script type="text/javascript">
+	var bmsPush = new BMSPush();
+     function callback(response) {
+     alert(response.response);
+     }
+      var initParams = {
+      "appGUID": "7a849d16-e7ee-4113-84fe-76f50372c5a9",
+      "appRegion":".ng.bluemix.net",
+      "clientSecret": "901d2b68-a4a6-4e88-8097-2f80094d71f2"
+    };
+      bmsPush.initialize(initParams, callback);
+      bmsPush.register(function(response) {
+    alert(response.response);
+  });
+	
+	
+	</script>
 </body>
 </html>
