@@ -1,4 +1,5 @@
 {
   "name":"ibm-push-demo.mybluemix.net",
-  "gcm_sender_id":"294835697421"
+  "gcm_sender_id":"294835697421",
+  "applicationServerKey":"AAAARKWTtw0:APA91bGXSXKFHUYFTIwLgP35DoRIGEyfuQX3u33NwOCqY8d91uW3p0hn6ZLzEeXVoDA53_GMUENrCQ8onAyD3JEOxybR5iM6ek6WWOVxprV9JGl1FWrkBmC70oM9gx_geGIhLri6SK_7"
 }
