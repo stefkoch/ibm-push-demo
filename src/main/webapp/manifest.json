@@ -1,3 +1,4 @@
 {
-  "name":"ibm-push-demo.mybluemix.net"
+  "name":"ibm-push-demo.mybluemix.net",
+  "gcm_sender_id":"294835697421"
 }
